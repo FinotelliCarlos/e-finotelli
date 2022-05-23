@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import dark from '../Themes/dark'
+
 
 export const AppBody = styled.div`
   display: flex;
@@ -41,7 +43,7 @@ export const AppMain = styled.main`
 `
 
 export const MainContainer = styled.div`
-  background: ${({ theme }) => theme.box100};
+  background: ${({ theme }) => dark.box100};
 
   display: flex;
   align-items: center;
@@ -67,7 +69,7 @@ export const AppFooter = styled.footer`
 `
 
 export const FooterContainer = styled.div`
-  background: ${({ theme }) => theme.box200};
+  background: ${({ theme }) => dark.box200};
 
   display: flex;
   align-items: center;

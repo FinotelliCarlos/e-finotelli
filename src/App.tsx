@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'styled-components'
 import {
   AppBody,
   AppFooter,
@@ -6,21 +7,24 @@ import {
   FooterContainer,
   HeaderContainer,
   MainContainer
-} from './Styles/AppStyles'
+} from './styles/AppStyles'
+import themes from './Themes'
 
 export function App() {
   return (
-    <AppBody>
-      <AppHeader>
-        <HeaderContainer>header</HeaderContainer>
-      </AppHeader>
-      <AppMain>
-        <MainContainer>main</MainContainer>
-      </AppMain>
-      <AppFooter>
-        <FooterContainer>footer</FooterContainer>
-      </AppFooter>
-    </AppBody>
+    <ThemeProvider theme={themes.dark}>
+      <AppBody>
+        <AppHeader>
+          <HeaderContainer>header</HeaderContainer>
+        </AppHeader>
+        <AppMain>
+          <MainContainer>main</MainContainer>
+        </AppMain>
+        <AppFooter>
+          <FooterContainer>footer</FooterContainer>
+        </AppFooter>
+      </AppBody>
+    </ThemeProvider>
   )
 }
 
