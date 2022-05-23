@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { darkMode } from '../Global/GlobalStyles'
 
 export const AppBody = styled.div`
   display: flex;
@@ -42,7 +41,7 @@ export const AppMain = styled.main`
 `
 
 export const MainContainer = styled.div`
-  background: ${({ theme }) => darkMode.box100};
+  background: ${({ theme }) => theme.box100};
 
   display: flex;
   align-items: center;
@@ -68,7 +67,7 @@ export const AppFooter = styled.footer`
 `
 
 export const FooterContainer = styled.div`
-  background: ${({ theme }) => darkMode.box200};
+  background: ${({ theme }) => theme.box200};
 
   display: flex;
   align-items: center;

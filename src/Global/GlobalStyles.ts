@@ -1,4 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
+//@ts-nocheck
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *{
@@ -12,8 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    background: ${({theme}) => darkMode.background};
-    color: ${({theme}) => darkMode.font100};
+    background: ${({theme}) => theme.background};
+    color: ${({theme}) => theme.font100};
     font-family: 'Poppins', sans-serif;
   }
 `
