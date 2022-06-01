@@ -1,11 +1,12 @@
 import { ThemeProvider } from 'styled-components'
+import { HeaderElement } from './components/HeaderElement'
 import {
   AppBody,
   AppFooter,
-  AppHeader,
+  MainHeader,
   AppMain,
   FooterContainer,
-  HeaderContainer,
+  MainHeaderContainer,
   MainContainer
 } from './styles/AppStyles'
 import themes from './Themes'
@@ -14,9 +15,10 @@ export function App() {
   return (
     <ThemeProvider theme={themes.dark}>
       <AppBody>
-        <AppHeader>
-          <HeaderContainer>header</HeaderContainer>
-        </AppHeader>
+        <HeaderElement />
+        <MainHeader>
+          <MainHeaderContainer>header</MainHeaderContainer>
+        </MainHeader>
         <AppMain>
           <MainContainer>main</MainContainer>
         </AppMain>

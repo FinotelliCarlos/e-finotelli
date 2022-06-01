@@ -1,19 +1,9 @@
 import styled from 'styled-components'
 import dark from '../Themes/dark'
 
-
 export const AppBody = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100vw;
-  height: 100%;
-`
-
-export const AppHeader = styled.header`
-  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -21,7 +11,22 @@ export const AppHeader = styled.header`
   height: 100%;
 `
 
-export const HeaderContainer = styled.div`
+export const MainHeader = styled.header`
+  background: ${({ theme }) => dark.box100};
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+`
+
+export const MainHeaderContainer = styled.div`
+  background: ${({ theme }) => dark.element};
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,11 +35,14 @@ export const HeaderContainer = styled.div`
   max-width: 768px;
 
   height: 100%;
-  min-height: 30vh;
 `
 
 export const AppMain = styled.main`
+  background: ${({ theme }) => dark.box200};
+
+  min-width: 100vw;
   width: 100%;
+  min-height: 100vh;
   height: 100%;
 
   display: flex;
@@ -43,7 +51,8 @@ export const AppMain = styled.main`
 `
 
 export const MainContainer = styled.div`
-  background: ${({ theme }) => dark.box100};
+  background: ${({ theme }) => dark.element};
+
 
   display: flex;
   align-items: center;
@@ -53,14 +62,14 @@ export const MainContainer = styled.div`
   max-width: 768px;
 
   height: 100%;
-  min-height: 70vh;
-
-  border-top: 2px solid #457b9d;
-  border-radius: 0.7rem 0.7rem 0 0;
 `
 
 export const AppFooter = styled.footer`
+  background: ${({ theme }) => dark.background};
+
+  min-width: 100vw;
   width: 100%;
+  min-height: 100vh;
   height: 100%;
 
   display: flex;
@@ -69,8 +78,6 @@ export const AppFooter = styled.footer`
 `
 
 export const FooterContainer = styled.div`
-  background: ${({ theme }) => dark.box200};
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,8 +86,5 @@ export const FooterContainer = styled.div`
   max-width: 768px;
 
   height: 100%;
-  min-height: 10vh;
-
-  border-top: 2px solid #457b9d;
 
 `
