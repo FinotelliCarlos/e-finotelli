@@ -3,21 +3,33 @@ import styled from "styled-components";
 import dark from "../../Themes/dark";
 
 export const HeaderBox = styled.header`
+  max-width: 850px;
   width: 100%;
+
   padding: 1rem 0;
   display: flex;
+  gap: 1rem;
+
   justify-content: space-around;
   align-items: center;
 `;
 
 export const Logotipo = styled.img`
-  width: 15rem;
+  width: 14rem;
+
+  @media screen and (max-width:450px){
+    width: 10rem;
+  }
+
 `
 
 export const Navigation = styled.ul`
   position: relative;
   display: flex;
+  justify-content: space-around;
+  width: 100%;
   gap: 2rem;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -34,6 +46,19 @@ export const Navigation = styled.ul`
   }
 `;
 
+
+export const ContainerListNav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+
 export const ListItem = styled.li`
   list-style: none;
   @media screen and (max-width: 768px) {
@@ -43,7 +68,7 @@ export const ListItem = styled.li`
 
 export const ButtonListItem = styled.a`
   display: inline-block;
-  font-size: 1rem;
+  font-size: .8rem;
   color: ${({theme}) => dark.font100};
   font-weight: 600;
   background: none;
@@ -73,7 +98,7 @@ export const ElementContactInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .2rem;
+  gap: .1rem;
   flex-direction: column;
 `
 
@@ -86,7 +111,7 @@ export const InfoText = styled.a`
   justify-content: center;
 
   gap: .2rem;
-  font-size: .8rem;
+  font-size: .7rem;
   
   color: ${({theme}) => dark.font200};
 `
@@ -114,7 +139,7 @@ export const a = styled.a`
 `
 export const ImgLink = styled.img`
 border-radius: .7rem;
-  width: 2rem;
+  width: 1.6rem;
 `
 
 export const MobileIcon = styled.div`

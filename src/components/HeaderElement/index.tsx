@@ -8,7 +8,7 @@ import instaIcon from '../../assets/iconintagram.ico'
 import whatsIcon from '../../assets/iconwhatsapp.ico'
 import {
   ButtonListItem,
-  ContainerContact, ElementContactInfo,
+  ContainerContact, ContainerListNav, ElementContactInfo,
   HeaderBox,
   ImgDiscord,
   ImgLink,
@@ -33,6 +33,8 @@ export function HeaderElement() {
       />
 
       <Navigation onClick={handleClick} click={sandwichClick}>
+        <ContainerListNav>
+          
           <ListItem>
             <ButtonListItem href="#services">Serviços</ButtonListItem>
           </ListItem>
@@ -48,6 +50,8 @@ export function HeaderElement() {
           <ListItem>
             <ButtonListItem href="#contact">Contato</ButtonListItem>
           </ListItem>
+        </ContainerListNav>
+
         <ElementContactInfo>
             <InfoText href="#">
               Entre em contato via Discord
@@ -66,6 +70,7 @@ export function HeaderElement() {
             </a>
           </ContainerContact>
         </ElementContactInfo>
+
       </Navigation>
 
       <MobileIcon onClick={handleClick}>
