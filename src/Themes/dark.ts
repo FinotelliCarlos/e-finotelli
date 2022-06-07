@@ -3,10 +3,12 @@ export default {
   
   box100: '#0a093f',
   box200: '#212067',
-  element: '#5650c4',
+  element: '#b5179e',
+  cards: '#6930c3',
 
   font100: '#f8f9fa',
   font200: '#dee2e6',
 
-  textAlert: '#5650c4',
+  textSmall: '#7678ed',
+  textAlert: '#b5179e',
 }

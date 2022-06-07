@@ -2,11 +2,21 @@
 import styled from "styled-components";
 import dark from "../../Themes/dark";
 
+export const HeaderContainerAll = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(180deg, rgba(10,9,63,1) 34%, rgba(33,32,103,1) 72%);
+`
+
 export const HeaderBox = styled.header`
+
   max-width: 850px;
   width: 100%;
 
-  padding: 1rem 0;
+  padding: 1rem;
   display: flex;
   gap: 1rem;
 
@@ -113,7 +123,11 @@ export const InfoText = styled.a`
   gap: .2rem;
   font-size: .7rem;
   
-  color: ${({theme}) => dark.font200};
+  color: ${({theme}) => dark.font100};
+
+  &:hover{
+    color: ${({theme}) => dark.font200};
+  }
 `
 export const ImgDiscord = styled.img`
   width: 1rem;

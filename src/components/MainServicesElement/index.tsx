@@ -1,8 +1,14 @@
+import { CardInfo } from './cardsinfo'
 import {
   ButtonContact,
   Card,
+  CardContainer,
+  CardDescription,
+  CardImage,
   Cards,
+  CardTitle,
   FirstQuestion,
+  FocusStrong,
   IntroContainer,
   OptionContainerTitle,
   OptionsAndCardsContainer,
@@ -27,28 +33,35 @@ export function MainServicesElement() {
         </QuestionElement>
         <PhraseContainer>
           <Phrase>
-            <TextStrong>
-              Desenvimento
-            </TextStrong>
-            por paixão e
-            <TextStrong>
-              solução de problemas
-            </TextStrong>
+            <TextStrong>Desenvimento </TextStrong>
+            por paixão e <TextStrong>solução de problemas </TextStrong>
             como inspiração todos os dias!
           </Phrase>
-          <PhraseSmall>Apaixonado pelo ecosistema Javascript.</PhraseSmall>
-          <ButtonContact href="#">Entre em contato agora</ButtonContact>
         </PhraseContainer>
+        <PhraseSmall>
+          Atualmente as tecnologias utilizadas são: Next.js, React-Native,
+          Typescript, Node.js, Javascript.
+        </PhraseSmall>
+        <ButtonContact href="#">Entre em contato agora</ButtonContact>
       </IntroContainer>
 
       <OptionsAndCardsContainer>
         <OptionContainerTitle>
-          Foco de serviço direcionado ao desenvolvimento de:
+          <FocusStrong>Foco de desenvolvimento </FocusStrong>
+          direcionado a:
         </OptionContainerTitle>
         <Cards className="cards">
-          <Card>Front-End</Card>
-          <Card>Mobile</Card>
-          <Card>Back-End</Card>
+          {CardInfo.map((item, index) => {
+            return (
+              <Card key={index}>
+                <CardImage src={item.image} alt="Mini Navegador Web" />
+                <CardContainer className="cont">
+                  <CardTitle>{item.title}</CardTitle>
+                  <CardDescription>{item.description}</CardDescription>
+                </CardContainer>
+              </Card>
+            )
+          })}
         </Cards>
       </OptionsAndCardsContainer>
     </ServicesContainer>

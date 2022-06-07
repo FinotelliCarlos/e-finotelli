@@ -12,8 +12,12 @@ export const AppBody = styled.div`
 `
 
 export const MainHeader = styled.header`
-  background: ${({ theme }) => dark.box100};
-  
+  background: linear-gradient(
+    180deg,
+    rgba(33, 32, 103, 1) 34%,
+    rgba(10, 9, 63, 1) 72%
+  );
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +29,6 @@ export const MainHeader = styled.header`
 `
 
 export const MainHeaderContainer = styled.div`
-  background: ${({ theme }) => dark.element};
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +40,11 @@ export const MainHeaderContainer = styled.div`
 `
 
 export const AppMain = styled.main`
-  background: ${({ theme }) => dark.box200};
+  background: linear-gradient(
+    180deg,
+    rgba(10, 9, 63, 1) 34%,
+    rgba(33, 32, 103, 1) 72%
+  );
 
   min-width: 100vw;
   width: 100%;
@@ -53,7 +59,6 @@ export const AppMain = styled.main`
 export const MainContainer = styled.div`
   background: ${({ theme }) => dark.element};
 
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +70,11 @@ export const MainContainer = styled.div`
 `
 
 export const AppFooter = styled.footer`
-  background: ${({ theme }) => dark.background};
+  background: linear-gradient(
+    180deg,
+    rgba(33, 32, 103, 1) 34%,
+    rgba(10, 9, 63, 1) 72%
+  );
 
   min-width: 100vw;
   width: 100%;
@@ -86,5 +95,4 @@ export const FooterContainer = styled.div`
   max-width: 768px;
 
   height: 100%;
-
 `
