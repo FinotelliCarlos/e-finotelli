@@ -8,18 +8,18 @@ export const CardInfo = [
     title: 'Front-end',
     image: `${Web}`,
 
-    description: 'Voltada à construção de sites, aplicativos, softwares, que constroem a internet como a conhecemos hoje.'
+    description: 'Voltada à construção de web-sites e softwares.'
   },
   {
     title: 'Back-end',
     image: `${BackEnd}`,
 
-    description: 'Podemos dizer ser a área capaz de cuidar das engrenagens daquela página, site, aplicativo, etc. '
+    description: 'É capaz de cuidar das engrenagens daquela aplicação.'
   },
   {
     title: 'Mobile',
     image: `${Mobile}`,
 
-    description: ''
+    description: 'Trata-se de aplicações para dispositivos moveis.'
   }
 ]

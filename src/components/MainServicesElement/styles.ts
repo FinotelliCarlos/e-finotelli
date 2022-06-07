@@ -108,6 +108,7 @@ export const FocusStrong = styled.strong`
 
 export const Cards = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 80vw;
@@ -123,34 +124,32 @@ export const Card = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  min-width: 15rem;
-  max-width: 19rem;
-  width: 100%;
-
-  height: 15rem;
+  width: 19rem;
+  height: 10rem;
   background: ${({ theme }) => dark.cards};
   gap: 2rem;
 `
 
 export const CardImage = styled.img`
   position: relative;
-  top: -4rem;
+  top: -3rem;
   left: -2rem;
 
   display: flex;
   align-items: left;
-  width: 8rem;
+  width: 7rem;
+  height: 9rem;
 `
 
 export const CardContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: left;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 0;  
 `
 
 
