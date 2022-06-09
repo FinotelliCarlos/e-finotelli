@@ -1,11 +1,11 @@
 //@ts-nocheck
-import { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import LogotipoFinotelli from '../../assets/finotellilogo.png'
-import discordIcon from '../../assets/icondiscord.ico'
-import gitIcon from '../../assets/icongithub.ico'
-import instaIcon from '../../assets/iconintagram.ico'
-import whatsIcon from '../../assets/iconwhatsapp.ico'
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import LogotipoFinotelli from "../../assets/finotellilogo.png";
+import discordIcon from "../../assets/icondiscord.ico";
+import gitIcon from "../../assets/icongithub.ico";
+import instaIcon from "../../assets/iconintagram.ico";
+import whatsIcon from "../../assets/iconwhatsapp.ico";
 import {
   ButtonListItem,
   ContainerContact,
@@ -21,23 +21,24 @@ import {
   Logotipo,
   MobileIcon,
   Navigation,
-  SpanTextInfo
-} from './styles'
+  SpanTextInfo,
+  Link
+} from "./styles";
 
 export function HeaderElement() {
-  const [sandwichClick, setSandwichClick] = useState(false)
+  const [sandwichClick, setSandwichClick] = useState(false);
 
-  const handleClick = () => setSandwichClick(!sandwichClick)
+  const handleClick = () => setSandwichClick(!sandwichClick);
 
   return (
     <HeaderContainerAll>
       <HeaderBox>
-        <a href="https://github.com/finotellicarlos" target={'_blank'}>
+        <Link href="https://github.com/finotellicarlos" target={"_blank"}>
           <Logotipo
             src={LogotipoFinotelli}
             alt="Logotipo Finotelli, Software developer Javascript"
           />
-        </a>
+        </Link>
 
         <Navigation onClick={handleClick} click={sandwichClick}>
           <ContainerListNav>
@@ -61,25 +62,25 @@ export function HeaderElement() {
           <ElementContactInfoNav>
             <InfoText
               href="https://discordapp.com/users/733724313550717038"
-              target={'_blank'}
+              target={"_blank"}
             >
               Entre em contato via Discord
               <ImgDiscord src={discordIcon} alt="pequeno icone discord" />
             </InfoText>
             <SpanTextInfo>ou</SpanTextInfo>
             <ContainerContact>
-              <a href="https://github.com/finotellicarlos" target={'_blank'}>
+              <Link href="https://github.com/finotellicarlos" target={"_blank"}>
                 <ImgLink src={gitIcon} alt="pequeno icone github" />
-              </a>
-              <a href="https://instagram.com/c_finotelli" target={'_blank'}>
+              </Link>
+              <Link href="https://instagram.com/c_finotelli" target={"_blank"}>
                 <ImgLink src={instaIcon} alt="pequeno icone instagram" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://api.whatsapp.com/send?phone=5511958331748"
-                target={'_blank'}
+                target={"_blank"}
               >
                 <ImgLink src={whatsIcon} alt="pequeno icone whatsapp" />
-              </a>
+              </Link>
             </ContainerContact>
           </ElementContactInfoNav>
         </Navigation>
@@ -87,25 +88,25 @@ export function HeaderElement() {
         <ElementContactInfoHeader>
           <InfoText
             href="https://discordapp.com/users/733724313550717038"
-            target={'_blank'}
+            target={"_blank"}
           >
             Entre em contato via Discord
             <ImgDiscord src={discordIcon} alt="pequeno icone discord" />
           </InfoText>
           <SpanTextInfo>ou</SpanTextInfo>
           <ContainerContact>
-            <a href="https://facebook.com/finotellicarlos" target={'_blank'}>
+            <Link href="https://facebook.com/finotellicarlos" target={"_blank"}>
               <ImgLink src={gitIcon} alt="pequeno icone github" />
-            </a>
-            <a href="https://instagram.com/c_finotelli" target={'_blank'}>
+            </Link>
+            <Link href="https://instagram.com/c_finotelli" target={"_blank"}>
               <ImgLink src={instaIcon} alt="pequeno icone instagram" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://api.whatsapp.com/send?phone=5511958331748"
-              target={'_blank'}
+              target={"_blank"}
             >
               <ImgLink src={whatsIcon} alt="pequeno icone whatsapp" />
-            </a>
+            </Link>
           </ContainerContact>
         </ElementContactInfoHeader>
 
@@ -118,5 +119,5 @@ export function HeaderElement() {
         </MobileIcon>
       </HeaderBox>
     </HeaderContainerAll>
-  )
+  );
 }
