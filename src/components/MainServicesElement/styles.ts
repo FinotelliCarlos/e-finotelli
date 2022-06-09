@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 80vw;
 `
 
 export const IntroContainer = styled.div`
@@ -38,6 +38,7 @@ export const FirstQuestion = styled.p`
 export const SecondQuestion = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.textSmall};
+  margin-top: .5rem;
 `
 
 export const PhraseContainer = styled.div`

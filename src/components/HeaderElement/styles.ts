@@ -1,6 +1,6 @@
 //@ts-nocheck
-import styled from "styled-components";
-import dark from "../../Themes/dark";
+import styled from 'styled-components'
+import dark from '../../Themes/dark'
 
 export const HeaderContainerAll = styled.div`
   width: 100%;
@@ -8,12 +8,15 @@ export const HeaderContainerAll = styled.div`
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(180deg, rgba(10,9,63,1) 34%, rgba(33,32,103,1) 72%);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 9, 63, 1) 34%,
+    rgba(33, 32, 103, 1) 72%
+  );
 `
 
 export const HeaderBox = styled.header`
-
-  max-width: 850px;
+  max-width: 80vw;
   width: 100%;
 
   padding: 1rem;
@@ -22,15 +25,14 @@ export const HeaderBox = styled.header`
 
   justify-content: space-around;
   align-items: center;
-`;
+`
 
 export const Logotipo = styled.img`
   width: 14rem;
 
-  @media screen and (max-width:450px){
+  @media screen and (max-width: 450px) {
     width: 10rem;
   }
-
 `
 
 export const Navigation = styled.ul`
@@ -39,6 +41,7 @@ export const Navigation = styled.ul`
   justify-content: space-around;
   width: 100%;
   gap: 2rem;
+  margin: 1rem;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -48,14 +51,13 @@ export const Navigation = styled.ul`
     height: 100vh;
     position: absolute;
     top: 0;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
     background: #333;
     z-index: 9;
   }
-`;
-
+`
 
 export const ContainerListNav = styled.div`
   display: flex;
@@ -68,18 +70,17 @@ export const ContainerListNav = styled.div`
   }
 `
 
-
 export const ListItem = styled.li`
   list-style: none;
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-`;
+`
 
 export const ButtonListItem = styled.a`
   display: inline-block;
-  font-size: .8rem;
-  color: ${({theme}) => dark.font100};
+  font-size: 0.8rem;
+  color: ${({ theme }) => dark.font100};
   font-weight: 600;
   background: none;
   text-decoration: none;
@@ -102,14 +103,29 @@ export const ButtonListItem = styled.a`
       transition: all 0.5s ease;
     }
   }
-`;
+`
 
-export const ElementContactInfo = styled.div`
+export const ElementContactInfoHeader = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  gap: .1rem;
+  gap: 0.1rem;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
+export const ElementContactInfoNav = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    flex-direction: column;
+  }
 `
 
 export const InfoText = styled.a`
@@ -120,13 +136,13 @@ export const InfoText = styled.a`
   align-items: center;
   justify-content: center;
 
-  gap: .2rem;
-  font-size: .7rem;
-  
-  color: ${({theme}) => dark.font100};
+  gap: 0.2rem;
+  font-size: 0.7rem;
 
-  &:hover{
-    color: ${({theme}) => dark.font200};
+  color: ${({ theme }) => dark.font100};
+
+  &:hover {
+    color: ${({ theme }) => dark.font200};
   }
 `
 export const ImgDiscord = styled.img`
@@ -134,8 +150,8 @@ export const ImgDiscord = styled.img`
 `
 
 export const SpanTextInfo = styled.span`
-  font-size: .7rem;
-  color: ${({theme}) => dark.font200};
+  font-size: 0.7rem;
+  color: ${({ theme }) => dark.font200};
 `
 
 export const ContainerContact = styled.div`
@@ -148,11 +164,11 @@ export const a = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .2rem;
+  gap: 0.2rem;
   cursor: pointer;
 `
 export const ImgLink = styled.img`
-border-radius: .7rem;
+  border-radius: 0.7rem;
   width: 1.6rem;
 `
 
@@ -168,4 +184,4 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
-`;
+`

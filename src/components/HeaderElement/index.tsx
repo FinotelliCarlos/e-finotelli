@@ -10,7 +10,8 @@ import {
   ButtonListItem,
   ContainerContact,
   ContainerListNav,
-  ElementContactInfo,
+  ElementContactInfoHeader,
+  ElementContactInfoNav,
   HeaderBox,
   HeaderContainerAll,
   ImgDiscord,
@@ -31,10 +32,12 @@ export function HeaderElement() {
   return (
     <HeaderContainerAll>
       <HeaderBox>
-        <Logotipo
-          src={LogotipoFinotelli}
-          alt="Logotipo Finotelli, Software developer Javascript"
-        />
+        <a href="https://github.com/finotellicarlos" target={'_blank'}>
+          <Logotipo
+            src={LogotipoFinotelli}
+            alt="Logotipo Finotelli, Software developer Javascript"
+          />
+        </a>
 
         <Navigation onClick={handleClick} click={sandwichClick}>
           <ContainerListNav>
@@ -55,8 +58,11 @@ export function HeaderElement() {
             </ListItem>
           </ContainerListNav>
 
-          <ElementContactInfo>
-            <InfoText href="https://discordapp.com/users/733724313550717038" target={'_blank'}>
+          <ElementContactInfoNav>
+            <InfoText
+              href="https://discordapp.com/users/733724313550717038"
+              target={'_blank'}
+            >
               Entre em contato via Discord
               <ImgDiscord src={discordIcon} alt="pequeno icone discord" />
             </InfoText>
@@ -68,12 +74,40 @@ export function HeaderElement() {
               <a href="https://instagram.com/c_finotelli" target={'_blank'}>
                 <ImgLink src={instaIcon} alt="pequeno icone instagram" />
               </a>
-              <a href="https://api.whatsapp.com/send?phone=5511958331748" target={'_blank'}>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511958331748"
+                target={'_blank'}
+              >
                 <ImgLink src={whatsIcon} alt="pequeno icone whatsapp" />
               </a>
             </ContainerContact>
-          </ElementContactInfo>
+          </ElementContactInfoNav>
         </Navigation>
+
+        <ElementContactInfoHeader>
+          <InfoText
+            href="https://discordapp.com/users/733724313550717038"
+            target={'_blank'}
+          >
+            Entre em contato via Discord
+            <ImgDiscord src={discordIcon} alt="pequeno icone discord" />
+          </InfoText>
+          <SpanTextInfo>ou</SpanTextInfo>
+          <ContainerContact>
+            <a href="https://facebook.com/finotellicarlos" target={'_blank'}>
+              <ImgLink src={gitIcon} alt="pequeno icone github" />
+            </a>
+            <a href="https://instagram.com/c_finotelli" target={'_blank'}>
+              <ImgLink src={instaIcon} alt="pequeno icone instagram" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511958331748"
+              target={'_blank'}
+            >
+              <ImgLink src={whatsIcon} alt="pequeno icone whatsapp" />
+            </a>
+          </ContainerContact>
+        </ElementContactInfoHeader>
 
         <MobileIcon onClick={handleClick}>
           {sandwichClick ? (
