@@ -15,6 +15,7 @@ export const IntroContainer = styled.div`
   align-items: left;
   justify-content: left;
 
+  max-width: 768px;
   width: 100%;
   padding: 2rem;
 `
@@ -65,6 +66,12 @@ export const PhraseSmall = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.font200};
   margin-top: 1rem;
+`
+
+export const PhraseSmallSecond = styled.p`
+  font-size: 0.7rem;
+  color: ${({ theme }) => dark.font200};
+  font-weight: bold;
 `
 
 export const ButtonContact = styled.a`

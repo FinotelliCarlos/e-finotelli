@@ -1,6 +1,6 @@
-//@ts-nocheck
 import styled from "styled-components";
 import dark from "../../Themes/dark";
+
 
 export const HeaderContainerAll = styled.div`
   width: 100%;
@@ -35,7 +35,7 @@ export const Logotipo = styled.img`
   }
 `;
 
-export const Navigation = styled.ul`
+export const Navigation = styled.ul<{click : any}>`
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -48,10 +48,10 @@ export const Navigation = styled.ul`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ click }) => (click ? 'none' : "-110%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #333;

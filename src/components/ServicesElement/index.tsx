@@ -1,4 +1,3 @@
-import { CardInfo } from './cardsinfo'
 import {
   ButtonContact,
   Card,
@@ -15,13 +14,15 @@ import {
   Phrase,
   PhraseContainer,
   PhraseSmall,
+  PhraseSmallSecond,
   QuestionElement,
   SecondQuestion,
   ServicesContainer,
   TextStrong
 } from './styles'
+import { CardInfo } from './cardsinfo'
 
-export function MainServicesElement() {
+export function ServicesElement() {
   return (
     <ServicesContainer>
       <IntroContainer>
@@ -39,10 +40,12 @@ export function MainServicesElement() {
           </Phrase>
         </PhraseContainer>
         <PhraseSmall>
-          Atualmente as tecnologias utilizadas são: Next.js, React-Native,
-          Typescript, Node.js, Javascript.
+          Atualmente as tecnologias utilizadas são:
         </PhraseSmall>
-        <ButtonContact href="#">Entre em contato agora</ButtonContact>
+        <PhraseSmallSecond>
+        Typescript, Node.js, Javascript, React.js, Next.js, React-Native c/ Expo.
+        </PhraseSmallSecond>
+        <ButtonContact href="https://api.whatsapp.com/send?phone=5511958331748">Entre em contato agora</ButtonContact>
       </IntroContainer>
 
       <OptionsAndCardsContainer>

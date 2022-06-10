@@ -1,14 +1,10 @@
 import { ThemeProvider } from 'styled-components'
 import { HeaderElement } from './components/HeaderElement'
-import { MainServicesElement } from './components/MainServicesElement'
+import { ServicesElement } from './components/ServicesElement'
 import {
   AppBody,
-  AppFooter,
-  MainHeader,
-  AppMain,
-  FooterContainer,
-  MainHeaderContainer,
-  MainContainer
+  AppFooter, AppMain,
+  FooterContainer, MainContainer, MainHeader, MainHeaderContainer
 } from './styles/AppStyles'
 import themes from './Themes'
 
@@ -19,7 +15,7 @@ export function App() {
         <HeaderElement />
         <MainHeader>
           <MainHeaderContainer>
-            <MainServicesElement />
+            <ServicesElement />
           </MainHeaderContainer>
         </MainHeader>
         <AppMain>
