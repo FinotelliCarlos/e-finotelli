@@ -73,7 +73,10 @@ export function HeaderElement() {
             </InfoText>
             <SpanTextInfo>ou</SpanTextInfo>
             <ContainerContact>
-              <Link href="https://github.com/finotellicarlos" target={'_blank'}>
+              <Link
+                href="https://facebook.com/finotellicarlos"
+                target={'_blank'}
+              >
                 <ImgLink src={faceIcon} alt="pequeno icone facebook" />
               </Link>
               <Link href="https://instagram.com/c_finotelli" target={'_blank'}>
@@ -100,7 +103,7 @@ export function HeaderElement() {
           <SpanTextInfo>ou</SpanTextInfo>
           <ContainerContact>
             <Link href="https://facebook.com/finotellicarlos" target={'_blank'}>
-              <ImgLink src={faceIcon} alt="pequeno icone facebok" />
+              <ImgLink src={faceIcon} alt="pequeno icone facebook" />
             </Link>
             <Link href="https://instagram.com/c_finotelli" target={'_blank'}>
               <ImgLink src={instaIcon} alt="pequeno icone instagram" />
