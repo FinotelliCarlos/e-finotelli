@@ -16,7 +16,7 @@ export const HeaderContainerAll = styled.div`
 `;
 
 export const HeaderBox = styled.header`
-  max-width: 80vw;
+  max-width: 70vw;
   width: 100%;
 
   padding: 1rem;
@@ -50,7 +50,7 @@ export const Navigation = styled.ul<{click : any}>`
     height: 100%;
     position: absolute;
     top: 0;
-    left: ${({ click }) => (click ? 0 : "100%")};
+    left: ${({ click }) => (click ? 'none' : "100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #333;

@@ -1,11 +1,15 @@
 //@ts-nocheck
 import { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+
 import LogotipoFinotelli from '../../assets/finotellilogo.png'
+
 import discordIcon from '../../assets/icondiscord.ico'
-import gitIcon from '../../assets/icongithub.ico'
+import faceIcon from '../../assets/iconfacebook.ico'
 import instaIcon from '../../assets/iconintagram.ico'
 import whatsIcon from '../../assets/iconwhatsapp.ico'
+
+import { FaBars, FaTimes } from 'react-icons/fa'
+
 import {
   ButtonListItem,
   ContainerContact,
@@ -70,7 +74,7 @@ export function HeaderElement() {
             <SpanTextInfo>ou</SpanTextInfo>
             <ContainerContact>
               <Link href="https://github.com/finotellicarlos" target={'_blank'}>
-                <ImgLink src={gitIcon} alt="pequeno icone github" />
+                <ImgLink src={faceIcon} alt="pequeno icone facebook" />
               </Link>
               <Link href="https://instagram.com/c_finotelli" target={'_blank'}>
                 <ImgLink src={instaIcon} alt="pequeno icone instagram" />
@@ -96,7 +100,7 @@ export function HeaderElement() {
           <SpanTextInfo>ou</SpanTextInfo>
           <ContainerContact>
             <Link href="https://facebook.com/finotellicarlos" target={'_blank'}>
-              <ImgLink src={gitIcon} alt="pequeno icone github" />
+              <ImgLink src={faceIcon} alt="pequeno icone facebok" />
             </Link>
             <Link href="https://instagram.com/c_finotelli" target={'_blank'}>
               <ImgLink src={instaIcon} alt="pequeno icone instagram" />

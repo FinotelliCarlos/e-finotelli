@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 80vw;
+  max-width: 70vw;
 `
 
 export const IntroContainer = styled.div`
