@@ -41,7 +41,6 @@ export const Navigation = styled.ul<{click : any}>`
   justify-content: space-around;
   width: 100%;
   gap: 2rem;
-  margin: 1rem;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -51,7 +50,7 @@ export const Navigation = styled.ul<{click : any}>`
     height: 100%;
     position: absolute;
     top: 0;
-    left: ${({ click }) => (click ? 'none' : "-110%")};
+    left: ${({ click }) => (click ? 0 : "100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #333;
