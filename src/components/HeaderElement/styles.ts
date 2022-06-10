@@ -43,7 +43,7 @@ export const Navigation = styled.ul<{click : any}>`
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
-    display: flex;
+    display:  ${({ click }) => (click ? 'flex' : "none")};;
     flex-direction: column;
     justify-content: center;
     width: 100%;
