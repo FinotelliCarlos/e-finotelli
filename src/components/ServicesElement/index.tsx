@@ -22,7 +22,9 @@ import {
 } from './styles'
 import { CardInfo } from './cardsinfo'
 
-export function ServicesElement() {
+type Props = {}
+
+export const ServicesElement = (props: Props) => {
   return (
     <ServicesContainer>
       <IntroContainer>

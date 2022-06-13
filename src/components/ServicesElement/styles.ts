@@ -7,6 +7,10 @@ export const ServicesContainer = styled.div`
   align-items: center;
   justify-content: center;
   max-width: 70vw;
+
+  @media screen and (max-width:768px){
+  max-width: 90vw;
+  }
 `
 
 export const IntroContainer = styled.div`

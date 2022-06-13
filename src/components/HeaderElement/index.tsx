@@ -29,7 +29,9 @@ import {
   Link
 } from './styles'
 
-export function HeaderElement() {
+type Props = {}
+
+export const HeaderElement = (props: Props) => {
   const [sandwichClick, setSandwichClick] = useState(false)
 
   const handleClick = () => setSandwichClick(!sandwichClick)
