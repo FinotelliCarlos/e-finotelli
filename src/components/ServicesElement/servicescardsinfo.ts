@@ -1,9 +1,9 @@
 //@ts-nocheck
-import Web from '../../assets/web.png'
-import BackEnd from '../../assets/backend.png'
-import Mobile from '../../assets/mobile.png'
+import Web from '../../assets/services/web.png'
+import BackEnd from '../../assets/services/backend.png'
+import Mobile from '../../assets/services/mobile.png'
 
-export const CardInfo = [
+export const ServiceInfo = [
   {
     title: 'Front-end',
     image: `${Web}`,

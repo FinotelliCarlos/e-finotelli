@@ -57,8 +57,6 @@ export const AppMain = styled.main`
 `
 
 export const MainContainer = styled.div`
-  background: ${({ theme }) => dark.element};
-
   display: flex;
   align-items: center;
   justify-content: center;

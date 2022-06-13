@@ -3,10 +3,10 @@ import { useState } from 'react'
 
 import LogotipoFinotelli from '../../assets/finotellilogo.png'
 
-import discordIcon from '../../assets/icondiscord.ico'
-import faceIcon from '../../assets/iconfacebook.ico'
-import instaIcon from '../../assets/iconintagram.ico'
-import whatsIcon from '../../assets/iconwhatsapp.ico'
+import discordIcon from '../../assets/contact/icondiscord.ico'
+import faceIcon from '../../assets/contact/iconfacebook.ico'
+import instaIcon from '../../assets/contact/iconintagram.ico'
+import whatsIcon from '../../assets/contact/iconwhatsapp.ico'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
 

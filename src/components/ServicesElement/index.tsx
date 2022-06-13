@@ -20,7 +20,7 @@ import {
   ServicesContainer,
   TextStrong
 } from './styles'
-import { CardInfo } from './cardsinfo'
+import { ServiceInfo } from './servicescardsinfo'
 
 type Props = {}
 
@@ -56,7 +56,7 @@ export const ServicesElement = (props: Props) => {
           direcionado a:
         </OptionContainerTitle>
         <Cards className="cards" >
-          {CardInfo.map((item, index) => {
+          {ServiceInfo.map((item, index) => {
             return (
               <Card key={index}>
                 <CardImage src={item.image} alt="Mini Navegador Web" />
