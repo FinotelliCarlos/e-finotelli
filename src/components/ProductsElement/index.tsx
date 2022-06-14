@@ -1,4 +1,3 @@
-//@ts-nocheck
 import { ProductInfo } from './productscardsinfo'
 import {
   BigImage,
