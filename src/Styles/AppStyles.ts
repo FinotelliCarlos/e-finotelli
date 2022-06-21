@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import dark from '../Themes/dark'
 
 export const AppBody = styled.div`
   display: flex;
