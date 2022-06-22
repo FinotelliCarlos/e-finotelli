@@ -52,10 +52,6 @@ export const HeaderElement = (props: Props) => {
             </ListItem>
 
             <ListItem>
-              <ButtonListItem href="#about">Sobre</ButtonListItem>
-            </ListItem>
-
-            <ListItem>
               <ButtonListItem href="#products">Produtos</ButtonListItem>
             </ListItem>
 
