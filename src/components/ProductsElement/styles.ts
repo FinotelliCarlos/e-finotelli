@@ -136,7 +136,7 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 19rem;
+  width: 23rem;
   height: 100%;
   gap: 1rem;
   border-bottom: 1px solid ${({ theme }) => dark.textAlert};
@@ -146,7 +146,7 @@ export const Project = styled.div`
 export const ProjectImage = styled.img`
   width: 100%;
   border-radius: 0.7rem;
-  border-bottom: 1px solid ${({ theme }) => dark.textSmall};
+  border-bottom: 1px solid ${({ theme }) => dark.font100};
 `
 
 export const ProjectTitle = styled.span`
