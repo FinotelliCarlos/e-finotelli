@@ -79,7 +79,7 @@ export const ImageBox = styled.div`
 `
 
 export const ImageProduct = styled.img`
-  width: 1rem;
+  width: 2rem;
   color: ${({ theme }) => dark.textSmall};
 `
 

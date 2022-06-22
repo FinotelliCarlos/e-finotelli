@@ -15,13 +15,11 @@ import {
 
 import BigImageHummans from '../../assets/products/humaaans.png'
 
-type Props = {}
-
-export const ProductsElement = (props: Props) => {
+export const ProductsElement = () => {
   return (
     <ProductsBox>
       <LeftElement>
-        <BigImage src={BigImageHummans} alt="" />
+        <BigImage src={BigImageHummans} />
       </LeftElement>
 
       <RightElement>
@@ -48,7 +46,7 @@ export const ProductsElement = (props: Props) => {
             return (
               <Card key={index}>
                 <ImageBox>
-                  <ImageProduct icon={item.image} />
+                  <ImageProduct src={item.image} style={{color: `${item.color}`}} />
                 </ImageBox>
                 <TitleProduct>{item.description}</TitleProduct>
               </Card>
