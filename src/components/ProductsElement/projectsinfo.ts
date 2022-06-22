@@ -20,7 +20,7 @@ export const ProjectsInfo = [
   {
     image: Finaceapp,
     title: 'Finance App',
-    description: 'Plataforma para controle financeiro pessoal.',
+    description: 'Plataforma para controle e organização financeira pessoal.',
     link: 'https://finotellicarlos.github.io/financeapp/'
   },
   {

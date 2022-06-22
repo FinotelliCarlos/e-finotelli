@@ -103,7 +103,7 @@ export const ProductsElement = () => {
                 <ProjectImage src={item.image}/>
                 <ProjectTitle>{item.title}</ProjectTitle>
                 <ProjectDescription>{item.description}</ProjectDescription>
-                <ProjectLink href={item.link}>
+                <ProjectLink href={item.link} target={'_blank'}>
                   Acesse agora
                 </ProjectLink>
               </Project>
