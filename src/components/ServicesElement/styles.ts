@@ -35,12 +35,12 @@ export const QuestionElement = styled.div`
   padding-left: 1rem;
 `
 
-export const FirstQuestion = styled.span`
+export const FirstQuestion = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.textSmall};
 `
 
-export const SecondQuestion = styled.span`
+export const SecondQuestion = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.textSmall};
   margin-top: .5rem;
@@ -56,7 +56,7 @@ export const PhraseContainer = styled.div`
   padding-top: 3rem;
 `
 
-export const Phrase = styled.span`
+export const Phrase = styled.p`
   font-size: 1rem;
   color: ${({ theme }) => dark.font100};
 `
@@ -66,7 +66,7 @@ export const TextStrong = styled.strong`
   color: ${({ theme }) => dark.textAlert};
 `
 
-export const PhraseSmall = styled.span`
+export const PhraseSmall = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.font200};
   margin-top: 1rem;
@@ -103,7 +103,7 @@ export const OptionsAndCardsContainer = styled.div`
   margin-top: 2rem;
 `
 
-export const OptionContainerTitle = styled.span`
+export const OptionContainerTitle = styled.p`
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -113,9 +113,8 @@ export const OptionContainerTitle = styled.span`
   color: ${({ theme }) => dark.font100};
 `
 
-export const FocusStrong = styled.span`
+export const FocusStrong = styled.strong`
   font-size: 1rem;
-  font-weight: bold;
   color: ${({ theme }) => dark.textAlert};
 `
 
@@ -166,13 +165,13 @@ export const CardContainer = styled.div`
 `
 
 
-export const CardTitle = styled.span`
+export const CardTitle = styled.p`
   font-size: 1rem;
   color: ${({ theme }) => dark.font100};
   font-weight: bold;
 `
 
-export const CardDescription = styled.span`
+export const CardDescription = styled.p`
   font-size: .8rem;
   color: ${({ theme }) => dark.font200};
 `
