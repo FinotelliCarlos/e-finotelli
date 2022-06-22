@@ -46,7 +46,7 @@ export const ProductsElement = () => {
             return (
               <Card key={index}>
                 <ImageBox>
-                  <ImageProduct src={item.image} style={{color: `${item.color}`}} />
+                  <ImageProduct src={item.image} />
                 </ImageBox>
                 <TitleProduct>{item.description}</TitleProduct>
               </Card>
