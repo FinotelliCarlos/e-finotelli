@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import LogotipoFinotelli from '../../assets/finotellilogo.png'
+import LogotipoFinotelli from '../assets/finotellilogo.png'
 
-import discordIcon from '../../assets/contact/icondiscord.ico'
-import faceIcon from '../../assets/contact/iconfacebook.ico'
-import instaIcon from '../../assets/contact/iconintagram.ico'
-import whatsIcon from '../../assets/contact/iconwhatsapp.ico'
+import discordIcon from '../assets/contact/icondiscord.ico'
+import faceIcon from '../assets/contact/iconfacebook.ico'
+import instaIcon from '../assets/contact/iconintagram.ico'
+import whatsIcon from '../assets/contact/iconwhatsapp.ico'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
 
@@ -26,7 +26,7 @@ import {
   Navigation,
   SpanTextInfo,
   Link
-} from './styles'
+} from '../styles/components/HeaderElement'
 
 type Props = {}
 

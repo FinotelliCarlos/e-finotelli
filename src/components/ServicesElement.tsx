@@ -1,11 +1,5 @@
 import {
   ButtonContact,
-  Card,
-  CardContainer,
-  CardDescription,
-  CardImage,
-  Cards,
-  CardTitle,
   FirstQuestion,
   FocusStrong,
   IntroContainer,
@@ -19,10 +13,16 @@ import {
   SecondQuestion,
   ServicesContainer,
   TextStrong
-} from './styles'
-import { ServiceInfo } from './servicescardsinfo'
+} from '../styles/components/ServicesElement'
+import { ServiceCard } from './ServiceCard'
 
-type Props = {}
+import { api } from '../lib/data'
+
+interface Props {
+  title: string
+  image: string
+  description: string
+}
 
 export const ServicesElement = (props: Props) => {
   return (
@@ -41,13 +41,17 @@ export const ServicesElement = (props: Props) => {
             como inspiração todos os dias!
           </Phrase>
         </PhraseContainer>
-        <PhraseSmall>
-          Atualmente as tecnologias utilizadas são:
-        </PhraseSmall>
+        <PhraseSmall>Atualmente as tecnologias utilizadas são:</PhraseSmall>
         <PhraseSmallSecond>
-        Typescript, Node.js, Javascript, React.js, Next.js, React-Native c/ Expo.
+          Typescript, Node.js, Javascript, React.js, Next.js, React-Native c/
+          Expo.
         </PhraseSmallSecond>
-        <ButtonContact id='services' href="https://api.whatsapp.com/send?phone=5511958331748">Entre em contato agora</ButtonContact>
+        <ButtonContact
+          id="services"
+          href="https://api.whatsapp.com/send?phone=5511958331748"
+        >
+          Entre em contato agora
+        </ButtonContact>
       </IntroContainer>
 
       <OptionsAndCardsContainer>
@@ -55,19 +59,17 @@ export const ServicesElement = (props: Props) => {
           <FocusStrong>Foco de desenvolvimento </FocusStrong>
           direcionado a:
         </OptionContainerTitle>
-        <Cards className="cards" >
-          {ServiceInfo.map((item, index) => {
-            return (
-              <Card key={index}>
-                <CardImage src={item.image} alt="Mini Navegador Web" />
-                <CardContainer className="cont">
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardContainer>
-              </Card>
-            )
-          })}
-        </Cards>
+
+        {api.services.map((item: Props, index) => {
+          return (
+            <ServiceCard
+              key={index}
+              title={item.title}
+              image={item.image}
+              description={item.description}
+            />
+          )
+        })}
       </OptionsAndCardsContainer>
     </ServicesContainer>
   )

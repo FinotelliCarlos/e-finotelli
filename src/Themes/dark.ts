@@ -10,5 +10,5 @@ export default {
   font200: '#dee2e6',
 
   textSmall: '#7678ed',
-  textAlert: '#b5179e',
+  textAlert: '#b5179e'
 }

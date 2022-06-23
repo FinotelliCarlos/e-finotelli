@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import dark from "../Themes/dark";
+import { createGlobalStyle } from 'styled-components'
+import dark from '../Themes/dark'
 
 export const GlobalStyles = createGlobalStyle`
   *{
@@ -13,8 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    background: ${({theme}) => dark.background};
-    color: ${({theme}) => dark.font100};
+    background: ${({ theme }) => dark.background};
+    color: ${({ theme }) => dark.font100};
     font-family: 'Poppins', sans-serif;
   }
 `

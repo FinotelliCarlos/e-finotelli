@@ -8,8 +8,8 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   max-width: 70vw;
 
-  @media screen and (max-width:768px){
-  max-width: 90vw;
+  @media screen and (max-width: 768px) {
+    max-width: 90vw;
   }
 `
 
@@ -43,7 +43,7 @@ export const FirstQuestion = styled.p`
 export const SecondQuestion = styled.p`
   font-size: 0.8rem;
   color: ${({ theme }) => dark.textSmall};
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 `
 
 export const PhraseContainer = styled.div`
@@ -82,7 +82,7 @@ export const ButtonContact = styled.a`
   margin-top: 2rem;
 
   text-decoration: none;
-  
+
   font-size: 1rem;
   color: ${({ theme }) => dark.font100};
 
@@ -91,7 +91,6 @@ export const ButtonContact = styled.a`
   height: 100%;
   padding: 1rem;
   border-radius: 1rem;
-  
 `
 
 export const OptionsAndCardsContainer = styled.div`
@@ -107,7 +106,7 @@ export const OptionContainerTitle = styled.p`
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: .4rem;
+  gap: 0.4rem;
   margin: 1rem;
   font-size: 1rem;
   color: ${({ theme }) => dark.font100};
@@ -117,62 +116,3 @@ export const FocusStrong = styled.strong`
   font-size: 1rem;
   color: ${({ theme }) => dark.textAlert};
 `
-
-export const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 80vw;
-  margin: 2rem ;
-  gap: 3rem;
-  @media screen and (max-width: 840px){
-    flex-direction: column;
-  }
-`
-
-export const Card = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  width: 19rem;
-  height: 10rem;
-  background: ${({ theme }) => dark.cards};
-  gap: 2rem;
-`
-
-export const CardImage = styled.img`
-  position: relative;
-  top: -3rem;
-  left: -2rem;
-
-  display: flex;
-  align-items: left;
-  width: 7rem;
-  height: 9rem;
-`
-
-export const CardContainer = styled.div`
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-  padding: 1rem 1rem 1rem 0;  
-`
-
-
-export const CardTitle = styled.p`
-  font-size: 1rem;
-  color: ${({ theme }) => dark.font100};
-  font-weight: bold;
-`
-
-export const CardDescription = styled.p`
-  font-size: .8rem;
-  color: ${({ theme }) => dark.font200};
-`
-

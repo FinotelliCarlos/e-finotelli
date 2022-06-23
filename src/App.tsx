@@ -5,12 +5,18 @@ import { ProductsElement } from './components/ProductsElement'
 import { ServicesElement } from './components/ServicesElement'
 import {
   AppBody,
-  AppFooter, AppMain,
-  FooterContainer, MainContainer, MainHeader, MainHeaderContainer
+  AppFooter,
+  AppMain,
+  FooterContainer,
+  MainContainer,
+  MainHeader,
+  MainHeaderContainer
 } from './styles/AppStyles'
 import themes from './Themes'
 
-export function App() {
+interface Props {}
+
+export function App(props: Props) {
   return (
     <ThemeProvider theme={themes.dark}>
       <AppBody>

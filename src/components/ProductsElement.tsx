@@ -1,29 +1,20 @@
-import { ProductInfo } from './productscardsinfo'
 import {
   BigImage,
-  Card,
-  Cards,
   ContentText,
-  ExempleProject,
   ExempleSubTitle,
   ExempleTitle,
   FirstElement,
-  ImageBox,
-  ImageProduct,
   ProductsBox,
-  Project,
-  ProjectDescription,
-  ProjectImage,
-  ProjectLink,
-  ProjectTitle,
   SeccondElement,
   StrongText,
-  ThirdElement,
-  TitleProduct
-} from './styles'
+  ThirdElement
+} from '../styles/components/ProductsElement'
 
-import BigImageHummans from '../../assets/products/humaaans.png'
-import { ProjectsInfo } from './projectsinfo'
+import BigImageHummans from '../assets/sections/humaaans.png'
+
+import { api } from '../lib/data'
+import { ProductCard } from './ProductCard'
+import { ProjectCard } from './ProjectCard'
 
 export const ProductsElement = () => {
   return (
@@ -57,18 +48,15 @@ export const ProductsElement = () => {
           </StrongText>
         </ContentText>
 
-        <Cards>
-          {ProductInfo.map((item, index) => {
-            return (
-              <Card key={index}>
-                <ImageBox>
-                  <ImageProduct src={item.image} />
-                </ImageBox>
-                <TitleProduct>{item.description}</TitleProduct>
-              </Card>
-            )
-          })}
-        </Cards>
+        {api.products.map((item, index) => {
+          return (
+            <ProductCard
+              key={index}
+              image={item.image}
+              description={item.description}
+            />
+          )
+        })}
 
         <ContentText>
           Conforme a empresa cresce, o número de clientes avança com ela e{' '}
@@ -96,20 +84,18 @@ export const ProductsElement = () => {
           Aqui pode ver alguns dos meus{' '}
           <ExempleSubTitle>projetos</ExempleSubTitle>.
         </ExempleTitle>
-        <ExempleProject>
-          {ProjectsInfo.map((item,index) => {
-            return (
-              <Project key={index}>
-                <ProjectImage src={item.image}/>
-                <ProjectTitle>{item.title}</ProjectTitle>
-                <ProjectDescription>{item.description}</ProjectDescription>
-                <ProjectLink href={item.link} target={'_blank'}>
-                  Acesse agora
-                </ProjectLink>
-              </Project>
-            )
-          })}
-        </ExempleProject>
+
+        {api.projects.map((item, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              imagem={item.image}
+              title={item.title}
+              description={item.description}
+              link={item.link}
+            />
+          )
+        })}
       </ThirdElement>
     </ProductsBox>
   )
