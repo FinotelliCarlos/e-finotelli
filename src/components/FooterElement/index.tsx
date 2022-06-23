@@ -1,6 +1,6 @@
 
 export function FooterElement(){
   return(
-    <h1>Footer</h1>
+    <h1></h1>
   )
 }
