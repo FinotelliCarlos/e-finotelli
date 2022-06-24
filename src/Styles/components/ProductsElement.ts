@@ -14,7 +14,6 @@ export const ProductsBox = styled.div`
   }
 `
 
-// Left
 export const FirstElement = styled.div`
   display: flex;
   align-items: center;
@@ -28,7 +27,6 @@ export const BigImage = styled.img`
   width: 80%;
 `
 
-// Right
 export const SeccondElement = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,6 +46,16 @@ export const StrongText = styled.span`
 export const ContentText = styled.span`
   font-size: 0.9rem;
   color: ${({ theme }) => dark.font200};
+  margin-bottom: 1rem;
+`
+
+export const Cards = styled.div`
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
   margin-bottom: 1rem;
 `
 
@@ -71,4 +79,13 @@ export const ExempleTitle = styled.span`
 export const ExempleSubTitle = styled.span`
   font-size: 1.5rem;
   color: ${({ theme }) => dark.textSmall};
+`
+
+export const ExempleProject = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
 `

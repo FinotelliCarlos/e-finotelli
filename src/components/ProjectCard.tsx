@@ -1,5 +1,4 @@
 import {
-  ExempleProject,
   Project,
   ProjectDescription,
   ProjectImage,
@@ -16,7 +15,6 @@ interface ProjectCardProps {
 
 export function ProjectCard(props: ProjectCardProps) {
   return (
-    <ExempleProject>
       <Project>
         <ProjectImage src={props.image} />
         <ProjectTitle>{props.title}</ProjectTitle>
@@ -25,6 +23,5 @@ export function ProjectCard(props: ProjectCardProps) {
           Acesse agora
         </ProjectLink>
       </Project>
-    </ExempleProject>
   )
 }

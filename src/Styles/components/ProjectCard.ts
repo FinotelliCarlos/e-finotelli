@@ -1,15 +1,6 @@
 import styled from 'styled-components'
 import dark from '../../Themes/dark'
 
-export const ExempleProject = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 1rem;
-`
-
 export const Project = styled.div`
   display: flex;
   flex-direction: column;

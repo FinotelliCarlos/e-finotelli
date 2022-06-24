@@ -1,18 +1,7 @@
 import styled from 'styled-components'
 import dark from '../../Themes/dark'
 
-export const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 80vw;
-  margin: 2rem;
-  gap: 3rem;
-  @media screen and (max-width: 840px) {
-    flex-direction: column;
-  }
-`
+
 
 export const Card = styled.div`
   display: flex;

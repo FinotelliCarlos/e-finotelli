@@ -1,15 +1,7 @@
 import styled from 'styled-components'
 import dark from '../../Themes/dark'
 
-export const Cards = styled.div`
-  display: flex;
-  align-items: top;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-`
+
 
 export const Card = styled.div`
   display: flex;

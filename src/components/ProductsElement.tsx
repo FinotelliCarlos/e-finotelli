@@ -1,6 +1,8 @@
 import {
   BigImage,
+  Cards,
   ContentText,
+  ExempleProject,
   ExempleSubTitle,
   ExempleTitle,
   FirstElement,
@@ -50,15 +52,17 @@ export function ProductsElement(props: Props) {
           </StrongText>
         </ContentText>
 
-        {api.products.map((item, index) => {
-          return (
-            <ProductCard
-              key={index}
-              image={item.image}
-              description={item.description}
-            />
-          )
-        })}
+        <Cards>
+          {api.products.map((item, index) => {
+            return (
+              <ProductCard
+                key={index}
+                image={item.image}
+                description={item.description}
+              />
+            )
+          })}
+        </Cards>
 
         <ContentText>
           Conforme a empresa cresce, o número de clientes avança com ela e{' '}
@@ -87,17 +91,19 @@ export function ProductsElement(props: Props) {
           <ExempleSubTitle>projetos</ExempleSubTitle>.
         </ExempleTitle>
 
-        {api.projects.map((item, index) => {
-          return (
-            <ProjectCard
-              key={index}
-              title={item.title}
-              image={item.image}
-              description={item.description}
-              link={item.link}
-            />
-          )
-        })}
+        <ExempleProject>
+          {api.projects.map((item, index) => {
+            return (
+              <ProjectCard
+                key={index}
+                title={item.title}
+                image={item.image}
+                description={item.description}
+                link={item.link}
+              />
+            )
+          })}
+        </ExempleProject>
       </ThirdElement>
     </ProductsBox>
   )

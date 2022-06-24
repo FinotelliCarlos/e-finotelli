@@ -2,9 +2,7 @@ import {
   Card,
   CardContainer,
   CardDescription,
-  CardImage,
-  Cards,
-  CardTitle
+  CardImage, CardTitle
 } from '../styles/components/ServiceCard'
 
 interface ServiceCardProps {
@@ -15,7 +13,6 @@ interface ServiceCardProps {
 
 export function ServiceCard(props: ServiceCardProps) {
   return (
-    <Cards className="cards">
       <Card>
         <CardImage src={props.image} />
         <CardContainer>
@@ -23,6 +20,5 @@ export function ServiceCard(props: ServiceCardProps) {
           <CardDescription>{props.description}</CardDescription>
         </CardContainer>
       </Card>
-    </Cards>
   )
 }

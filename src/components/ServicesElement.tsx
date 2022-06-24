@@ -1,5 +1,6 @@
 import {
   ButtonContact,
+  Cards,
   FirstQuestion,
   FocusStrong,
   IntroContainer,
@@ -56,16 +57,18 @@ export function ServicesElement(props: ServicesElementProps) {
           direcionado a:
         </OptionContainerTitle>
 
-        {api.services.map((item, index) => {
-          return (
-            <ServiceCard
-              key={index}
-              title={item.title}
-              image={item.image}
-              description={item.description}
-            />
-          )
-        })}
+        <Cards>
+          {api.services.map((item, index) => {
+            return (
+              <ServiceCard
+                key={index}
+                title={item.title}
+                image={item.image}
+                description={item.description}
+              />
+            )
+          })}
+        </Cards>
       </OptionsAndCardsContainer>
     </ServicesContainer>
   )
