@@ -122,7 +122,7 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  width: 80vw;
+  width: 70vw;
   margin: 2rem;
   gap: 3rem;
   @media screen and (max-width: 840px) {
