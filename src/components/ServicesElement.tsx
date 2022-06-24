@@ -18,13 +18,9 @@ import { ServiceCard } from './ServiceCard'
 
 import { api } from '../lib/data'
 
-interface Props {
-  title: string
-  image: string
-  description: string
-}
+interface ServicesElementProps {}
 
-export const ServicesElement = (props: Props) => {
+export function ServicesElement(props: ServicesElementProps) {
   return (
     <ServicesContainer>
       <IntroContainer>
@@ -60,7 +56,7 @@ export const ServicesElement = (props: Props) => {
           direcionado a:
         </OptionContainerTitle>
 
-        {api.services.map((item: Props, index) => {
+        {api.services.map((item, index) => {
           return (
             <ServiceCard
               key={index}

@@ -16,7 +16,7 @@ import themes from './Themes'
 
 interface Props {}
 
-export function App(props: Props) {
+export default function App(props: Props) {
   return (
     <ThemeProvider theme={themes.dark}>
       <AppBody>
@@ -40,5 +40,3 @@ export function App(props: Props) {
     </ThemeProvider>
   )
 }
-
-export default App

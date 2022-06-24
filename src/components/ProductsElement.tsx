@@ -16,7 +16,9 @@ import { api } from '../lib/data'
 import { ProductCard } from './ProductCard'
 import { ProjectCard } from './ProjectCard'
 
-export const ProductsElement = () => {
+interface Props {}
+
+export function ProductsElement(props: Props) {
   return (
     <ProductsBox>
       <FirstElement id="products">
@@ -89,8 +91,8 @@ export const ProductsElement = () => {
           return (
             <ProjectCard
               key={index}
-              imagem={item.image}
               title={item.title}
+              image={item.image}
               description={item.description}
               link={item.link}
             />

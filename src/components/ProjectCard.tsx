@@ -8,22 +8,20 @@ import {
 } from '../styles/components/ProjectCard'
 
 interface ProjectCardProps {
-  projects: {
     image: string
     title: string
     description: string
     link: string
-  }
 }
 
 export function ProjectCard(props: ProjectCardProps) {
   return (
     <ExempleProject>
       <Project>
-        <ProjectImage src={props.projects.image} />
-        <ProjectTitle>{props.projects.title}</ProjectTitle>
-        <ProjectDescription>{props.projects.description}</ProjectDescription>
-        <ProjectLink href={props.projects.link} target={'_blank'}>
+        <ProjectImage src={props.image} />
+        <ProjectTitle>{props.title}</ProjectTitle>
+        <ProjectDescription>{props.description}</ProjectDescription>
+        <ProjectLink href={props.link} target={'_blank'}>
           Acesse agora
         </ProjectLink>
       </Project>

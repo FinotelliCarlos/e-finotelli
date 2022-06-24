@@ -8,21 +8,19 @@ import {
 } from '../styles/components/ServiceCard'
 
 interface ServiceCardProps {
-  services: {
     title: string
     image: string
     description: string
-  }
 }
 
 export function ServiceCard(props: ServiceCardProps) {
   return (
     <Cards className="cards">
       <Card>
-        <CardImage src={props.services.image} />
+        <CardImage src={props.image} />
         <CardContainer>
-          <CardTitle>{props.services.title}</CardTitle>
-          <CardDescription>{props.services.description}</CardDescription>
+          <CardTitle>{props.title}</CardTitle>
+          <CardDescription>{props.description}</CardDescription>
         </CardContainer>
       </Card>
     </Cards>

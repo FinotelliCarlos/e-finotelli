@@ -7,10 +7,8 @@ import {
 } from '../styles/components/ProductCard'
 
 interface ProductCardProps {
-  products: {
-    image: string
-    description: string
-  }
+  image: string
+  description: string
 }
 
 export function ProductCard(props: ProductCardProps) {
@@ -18,9 +16,9 @@ export function ProductCard(props: ProductCardProps) {
     <Cards>
       <Card>
         <ImageBox>
-          <ImageProduct src={props.products.image} />
+          <ImageProduct src={props.image} />
         </ImageBox>
-        <TitleProduct>{props.products.description}</TitleProduct>
+        <TitleProduct>{props.description}</TitleProduct>
       </Card>
     </Cards>
   )

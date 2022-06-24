@@ -30,7 +30,7 @@ import {
 
 type Props = {}
 
-export const HeaderElement = (props: Props) => {
+export function HeaderElement(props: Props) {
   const [sandwichClick, setSandwichClick] = useState(false)
 
   const handleClick = () => setSandwichClick(!sandwichClick)
