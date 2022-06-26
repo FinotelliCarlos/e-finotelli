@@ -1,5 +1,6 @@
 import {
-  Card, ImageBox,
+  Card,
+  ImageBox,
   ImageProduct,
   TitleProduct
 } from '../styles/components/ProductCard'
@@ -11,11 +12,11 @@ interface ProductCardProps {
 
 export function ProductCard(props: ProductCardProps) {
   return (
-      <Card>
-        <ImageBox>
-          <ImageProduct src={props.image} />
-        </ImageBox>
-        <TitleProduct>{props.description}</TitleProduct>
-      </Card>
+    <Card>
+      <ImageBox>
+        <ImageProduct src={props.image} />
+      </ImageBox>
+      <TitleProduct>{props.description}</TitleProduct>
+    </Card>
   )
 }

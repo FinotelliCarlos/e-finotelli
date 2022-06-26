@@ -1,8 +1,11 @@
 import {
   BigImage,
-  Cards, ContentText, FirstElement,
+  Cards,
+  ContentText,
+  FirstElement,
   ProductsBox,
-  SeccondElement, StrongText
+  SeccondElement,
+  StrongText
 } from '../styles/components/ProductsElement'
 import { ProductCard } from './ProductCard'
 
@@ -10,13 +13,12 @@ import BigImageHummans from '../assets/sections/humaaans.png'
 
 import { api } from '../lib/data'
 
-
 interface Props {}
 
 export function ProductsElement(props: Props) {
   return (
-    <ProductsBox>
-      <FirstElement id="products">
+    <ProductsBox id="products">
+      <FirstElement>
         <BigImage src={BigImageHummans} />
       </FirstElement>
 

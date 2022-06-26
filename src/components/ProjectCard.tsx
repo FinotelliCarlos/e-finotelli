@@ -7,21 +7,21 @@ import {
 } from '../styles/components/ProjectCard'
 
 interface ProjectCardProps {
-    image: string
-    title: string
-    description: string
-    link: string
+  image: string
+  title: string
+  description: string
+  link: string
 }
 
 export function ProjectCard(props: ProjectCardProps) {
   return (
-      <Project>
-        <ProjectImage src={props.image} />
-        <ProjectTitle>{props.title}</ProjectTitle>
-        <ProjectDescription>{props.description}</ProjectDescription>
-        <ProjectLink href={props.link} target={'_blank'}>
-          Acesse agora
-        </ProjectLink>
-      </Project>
+    <Project>
+      <ProjectImage src={props.image} />
+      <ProjectTitle>{props.title}</ProjectTitle>
+      <ProjectDescription>{props.description}</ProjectDescription>
+      <ProjectLink href={props.link} target={'_blank'}>
+        Acesse agora
+      </ProjectLink>
+    </Project>
   )
 }

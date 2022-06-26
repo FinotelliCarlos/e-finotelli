@@ -1,12 +1,12 @@
-import { Button } from "../styles/components/ButtonContact";
+import { Button } from '../styles/components/ButtonContact'
 
 export function ButtonContact() {
   return (
     <Button
-    id="services"
-    href="https://api.whatsapp.com/send?phone=5511958331748"
+      href="https://api.whatsapp.com/send?phone=5511958331748"
+      target="_blank"
     >
-    Entre em contato agora
-  </Button>
+      Entre em contato agora
+    </Button>
   )
 }

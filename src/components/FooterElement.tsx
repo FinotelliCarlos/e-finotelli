@@ -1,3 +1,3 @@
 export function FooterElement() {
-  return <h1></h1>
+  return <div id="contact"></div>
 }

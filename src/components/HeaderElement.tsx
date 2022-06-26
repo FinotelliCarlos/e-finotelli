@@ -56,6 +56,10 @@ export function HeaderElement(props: Props) {
             </ListItem>
 
             <ListItem>
+              <ButtonListItem href="#projects">Projetos</ButtonListItem>
+            </ListItem>
+
+            <ListItem>
               <ButtonListItem href="#contact">Contato</ButtonListItem>
             </ListItem>
           </ContainerListNav>
