@@ -16,5 +16,6 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => dark.background};
     color: ${({ theme }) => dark.font100};
     font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 `

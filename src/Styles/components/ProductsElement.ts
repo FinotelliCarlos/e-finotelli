@@ -24,7 +24,7 @@ export const BigImage = styled.img`
   position: relative;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 67%;
 `
 
 export const SeccondElement = styled.div`

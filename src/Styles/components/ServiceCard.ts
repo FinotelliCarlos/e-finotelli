@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import dark from '../../Themes/dark'
 
-
-
 export const Card = styled.div`
   display: flex;
   align-items: center;
@@ -10,15 +8,18 @@ export const Card = styled.div`
 
   width: 19rem;
   height: 10rem;
-  background: ${({ theme }) => dark.cards};
+  background: linear-gradient(
+    90deg,
+    rgba(105, 48, 195, 0.36317302800026263) 0%,
+    rgba(105, 48, 195, 1) 100%
+  );
   gap: 2rem;
+  border-right: 5px solid ${({ theme }) => dark.element};
+  border-radius: 0.5rem;
+  padding: 0 0 0 0.5rem;
 `
 
 export const CardImage = styled.img`
-  position: relative;
-  top: -3rem;
-  left: -2rem;
-
   display: flex;
   align-items: left;
   width: 7rem;
@@ -26,7 +27,7 @@ export const CardImage = styled.img`
 `
 
 export const CardContainer = styled.div`
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -37,6 +38,8 @@ export const CardContainer = styled.div`
 `
 
 export const CardTitle = styled.p`
+  text-align: left;
+  width: 100%;
   font-size: 1rem;
   color: ${({ theme }) => dark.font100};
   font-weight: bold;
@@ -44,5 +47,6 @@ export const CardTitle = styled.p`
 
 export const CardDescription = styled.p`
   font-size: 0.8rem;
+  text-align: left;
   color: ${({ theme }) => dark.font200};
 `
