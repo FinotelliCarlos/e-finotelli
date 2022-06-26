@@ -17,5 +17,20 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => dark.font100};
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
+
+    ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #6c757d; 
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #495057; 
+    }
   }
 `

@@ -33,11 +33,11 @@ export default function App(props: Props) {
             <ProjectsElement />
           </MainContainer>
         </AppMain>
-        <AppFooter>
+        {/* <AppFooter>
           <FooterContainer>
             <FooterElement />
           </FooterContainer>
-        </AppFooter>
+        </AppFooter> */}
       </AppBody>
     </ThemeProvider>
   )
