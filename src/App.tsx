@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components'
 import { FooterElement } from './components/FooterElement'
 import { HeaderElement } from './components/HeaderElement'
 import { ProductsElement } from './components/ProductsElement'
+import { ProjectsElement } from './components/ProjectsElement'
 import { ServicesElement } from './components/ServicesElement'
 import {
   AppBody,
@@ -29,6 +30,7 @@ export default function App(props: Props) {
         <AppMain>
           <MainContainer>
             <ProductsElement />
+            <ProjectsElement />
           </MainContainer>
         </AppMain>
         <AppFooter>

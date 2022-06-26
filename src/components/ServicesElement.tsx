@@ -1,5 +1,4 @@
 import {
-  ButtonContact,
   Cards,
   FirstQuestion,
   FocusStrong,
@@ -18,6 +17,7 @@ import {
 import { ServiceCard } from './ServiceCard'
 
 import { api } from '../lib/data'
+import { ButtonContact } from './ButtonContact'
 
 interface ServicesElementProps {}
 
@@ -43,12 +43,9 @@ export function ServicesElement(props: ServicesElementProps) {
           Typescript, Node.js, Javascript, React.js, Next.js, React-Native c/
           Expo.
         </PhraseSmallSecond>
-        <ButtonContact
-          id="services"
-          href="https://api.whatsapp.com/send?phone=5511958331748"
-        >
-          Entre em contato agora
-        </ButtonContact>
+
+        <ButtonContact />
+
       </IntroContainer>
 
       <OptionsAndCardsContainer>

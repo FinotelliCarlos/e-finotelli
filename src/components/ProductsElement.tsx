@@ -1,22 +1,15 @@
 import {
   BigImage,
-  Cards,
-  ContentText,
-  ExempleProject,
-  ExempleSubTitle,
-  ExempleTitle,
-  FirstElement,
+  Cards, ContentText, FirstElement,
   ProductsBox,
-  SeccondElement,
-  StrongText,
-  ThirdElement
+  SeccondElement, StrongText
 } from '../styles/components/ProductsElement'
+import { ProductCard } from './ProductCard'
 
 import BigImageHummans from '../assets/sections/humaaans.png'
 
 import { api } from '../lib/data'
-import { ProductCard } from './ProductCard'
-import { ProjectCard } from './ProjectCard'
+
 
 interface Props {}
 
@@ -85,26 +78,6 @@ export function ProductsElement(props: Props) {
           </StrongText>
         </ContentText>
       </SeccondElement>
-      <ThirdElement>
-        <ExempleTitle>
-          Aqui pode ver alguns dos meus{' '}
-          <ExempleSubTitle>projetos</ExempleSubTitle>.
-        </ExempleTitle>
-
-        <ExempleProject>
-          {api.projects.map((item, index) => {
-            return (
-              <ProjectCard
-                key={index}
-                title={item.title}
-                image={item.image}
-                description={item.description}
-                link={item.link}
-              />
-            )
-          })}
-        </ExempleProject>
-      </ThirdElement>
     </ProductsBox>
   )
 }

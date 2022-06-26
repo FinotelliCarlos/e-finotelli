@@ -78,21 +78,6 @@ export const PhraseSmallSecond = styled.p`
   font-weight: bold;
 `
 
-export const ButtonContact = styled.a`
-  margin-top: 2rem;
-
-  text-decoration: none;
-
-  font-size: 1rem;
-  color: ${({ theme }) => dark.font100};
-
-  background: ${({ theme }) => dark.textAlert};
-  max-width: 15rem;
-  height: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
-`
-
 export const OptionsAndCardsContainer = styled.div`
   display: flex;
   flex-direction: column;

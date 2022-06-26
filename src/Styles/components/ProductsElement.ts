@@ -58,34 +58,3 @@ export const Cards = styled.div`
   width: 100%;
   margin-bottom: 1rem;
 `
-
-// Exemples of Projects
-
-export const ThirdElement = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 4rem;
-`
-
-export const ExempleTitle = styled.span`
-  font-size: 1.5rem;
-  color: ${({ theme }) => dark.font100};
-  margin-bottom: 4rem;
-`
-
-export const ExempleSubTitle = styled.span`
-  font-size: 1.5rem;
-  color: ${({ theme }) => dark.textSmall};
-`
-
-export const ExempleProject = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 1rem;
-`
