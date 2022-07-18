@@ -79,13 +79,12 @@ export const ButtonListItem = styled.a`
   display: inline-block;
   font-size: 0.8rem;
   color: ${({ theme }) => dark.font100};
-  font-weight: 600;
+  font-weight: 400;
   background: none;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
   :hover {
-    transform: translateY(-5%);
     opacity: 0.8;
   }
   @media screen and (max-width: 768px) {

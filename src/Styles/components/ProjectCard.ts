@@ -32,14 +32,14 @@ export const ProjectDescription = styled.span`
   text-align: left;
   width: 100%;
   padding-left: 1rem;
-  font-weight: bold;
+  font-weight: 400;
   color: ${({ theme }) => dark.font200};
 `
 
 export const ProjectLink = styled.a`
   width: 100%;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   color: ${({ theme }) => dark.font200};
 
